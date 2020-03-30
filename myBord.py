@@ -16,21 +16,28 @@ class MyBord(Bord):
             my_cells[i, 0] = i
             my_cells[0, i] = i
 
-    # alphabets = string.ascii_lowercase
-    # for i in alphabets:
-    #         if i >= 'k':
-    #             break
-    #         print(ord(i) - 96)
-    #         my_cells[0, (ord(i)-96)] = i # use np.einsum() to fill np in letters
+                                # alphabets = string.ascii_lowercase
+                                # for i in alphabets:
+                                #         if i >= 'k':
+                                #             break
+                                #         print(ord(i) - 96)
+                                #         my_cells[0, (ord(i)-96)] = i # use np.einsum() to fill np in letters
+        class MySubmarine:
+            pass
 
     def __init__(self):
-        print('my bord' '\n', + self.my_cells)
+        print('my bord:' '\n', + self.my_cells)
         self.fill_submarines()
         print("my cells full  '\n' {} ".format(self.my_cells))
 
     def fill_submarines(self):
         for i in range(5, 2, -1):
-            # 1. orientatiom
+
+            submarine_name = 'submarine_' + str(i)
+            print(submarine_name)
+            submarine_name = self.MySubmarine
+
+            # 1. orientation
             submarine_orientation = raw_input('choose "V" to vertical submarine or "H" to horizontal submarine')
             submarine_orientation.upper()
             while True:
@@ -42,6 +49,7 @@ class MyBord(Bord):
                     continue
                 else:
                     break
+
             # 2. define stat point and end point
             # a. row start:
             submarine_row_start = raw_input('choose row for the {} size submarine starting point'.format(i))
@@ -117,5 +125,6 @@ class MyBord(Bord):
             assert (self.my_cells[row_x + 1, row_y - 1] == 0)
 
         except:
+            print('The cell is adjacent to an existing submarine')
             self.fill_submarines()
         return  row_x, row_y
