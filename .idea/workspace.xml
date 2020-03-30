@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBord.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,11 +161,21 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="232" y="153" key="#Inspections" timestamp="1585425394866">
+    <state x="232" y="153" key="#Inspections" timestamp="1585606190605">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585425394866" />
+    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585606190605" />
     <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585425629945">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -177,38 +188,38 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1259" height="247" key="GridCell.Tab.0.bottom" timestamp="1585583486498">
+    <state width="1259" height="126" key="GridCell.Tab.0.bottom" timestamp="1585607242057">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="247" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585583486498" />
-    <state width="1259" height="247" key="GridCell.Tab.0.center" timestamp="1585583486498">
+    <state width="1259" height="126" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
+    <state width="1259" height="126" key="GridCell.Tab.0.center" timestamp="1585607242057">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="247" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585583486498" />
-    <state width="1259" height="247" key="GridCell.Tab.0.left" timestamp="1585583486498">
+    <state width="1259" height="126" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
+    <state width="1259" height="126" key="GridCell.Tab.0.left" timestamp="1585607242057">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="247" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585583486498" />
-    <state width="1259" height="247" key="GridCell.Tab.0.right" timestamp="1585583486498">
+    <state width="1259" height="126" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
+    <state width="1259" height="126" key="GridCell.Tab.0.right" timestamp="1585607242057">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="247" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585583486498" />
-    <state width="1259" height="325" key="GridCell.Tab.1.bottom" timestamp="1585579423259">
+    <state width="1259" height="126" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
+    <state width="1259" height="325" key="GridCell.Tab.1.bottom" timestamp="1585603250087">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585579423259" />
-    <state width="1259" height="325" key="GridCell.Tab.1.center" timestamp="1585579423259">
+    <state width="1259" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
+    <state width="1259" height="325" key="GridCell.Tab.1.center" timestamp="1585603250087">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585579423259" />
-    <state width="1259" height="325" key="GridCell.Tab.1.left" timestamp="1585579423259">
+    <state width="1259" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
+    <state width="1259" height="325" key="GridCell.Tab.1.left" timestamp="1585603250087">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585579423259" />
-    <state width="1259" height="325" key="GridCell.Tab.1.right" timestamp="1585579423259">
+    <state width="1259" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
+    <state width="1259" height="325" key="GridCell.Tab.1.right" timestamp="1585603250087">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585579423259" />
+    <state width="1259" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
     <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -220,6 +231,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -228,5 +246,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="my_cells" />
+        <watch expression="MyBord.my_cells" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
