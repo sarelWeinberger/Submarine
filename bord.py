@@ -1,7 +1,7 @@
 import numpy as np
 from notebook.notebookapp import raw_input
 
-class bcolors:
+class Bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKGREEN = '\033[92m'
@@ -26,10 +26,11 @@ class Bord:
         except Exception as e:
             print(e.args)
             new_input = raw_input('try new input')
+            return int(new_input)
             continue
         else:
-            return  int(new_input)
-        
+            break
+
     # if filling_bord:
     #     check_filling(in_index)
     # def check_filling(in_index):

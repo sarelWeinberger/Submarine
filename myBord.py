@@ -2,7 +2,7 @@ import numpy as np
 from sympy.core import alphabets
 import string
 from bord import Bord
-from bord import bcolors
+from bord import Bcolors
 from notebook.notebookapp import raw_input
 
 
@@ -30,6 +30,7 @@ class MyBord(Bord):
 
     def fill_submarines(self):
         for i in range(5, 2, -1):
+            # 1. orientatiom
             submarine_orientation = raw_input('choose "V" to vertical submarine or "H" to horizontal submarine')
             submarine_orientation.upper()
             while True:
@@ -41,25 +42,32 @@ class MyBord(Bord):
                     continue
                 else:
                     break
+            # 2. define stat point and end point
+            # a. row start:
             submarine_row_start = raw_input('choose row for the {} size submarine starting point'.format(i))
             submarine_row_start = self.check_input(submarine_row_start)
-            # more fill checking
             # bcolors.HEADER + submarine_row + bcolors.ENDC --> only for strings
 
+            # b. row end
             submarine_row_end = 0
             if (submarine_orientation == 'H'):
                 submarine_row_end = raw_input('choose row for the {} size submarine end point'.format(i))
                 submarine_row_end = self.check_input(submarine_row_end)
 
-            submarine_column_start = raw_input('choose column for the {} size submarine end point'.format(i))
-            submarine_column_start = self.check_input(submarine_column_start)
-            # more fill checking
-            self.check_filling(i, submarine_row_start, submarine_row_end )
+            # checking:
+            submarine_row_end = self.length_check(i, submarine_row_start, submarine_row_end)
+            submarine_row_start, submarine_row_end = self.collision_or_snap_check(submarine_row_start, submarine_row_end)
 
+            # c. column start
+            submarine_column_start = raw_input('choose column for the {} size submarine start point'.format(i))
+            submarine_column_start = self.check_input(submarine_column_start)
+
+            # d. column end
             if (submarine_orientation == 'v'):
                 submarine_column_end = raw_input('choose column for the {} size submarine end point'.format(i))
                 submarine_column_end = self.check_input(submarine_column_end)
 
+            # filling lines:
             if submarine_orientation == 'H':
                 for i in range(submarine_row_start, submarine_row_end):
                     self.my_cells[i, submarine_column_start] = 1
@@ -73,13 +81,41 @@ class MyBord(Bord):
             #
             # self.my_cells[int(submarine_row), int(submarine_column)] = 1
 
-    def check_filling(self, sibmarine_size, submarine_row_start, submarine_row_end):
-        self.check_input_size()
-
-
-        def check_input_size():
+    def length_check(self, sibmarine_size, submarine_start, submarine_end):
+        # checking length
+        while True:
             try:
-              assert( abs(submarine_row_start - submarine_row_end) > sibmarine_size)
+                assert (abs(submarine_start - submarine_end) > sibmarine_size)
+                return submarine_end
             except:
-                new_end_point = raw_input("rong size try anther parameter set new end point")
-            return new_end_point
+                submarine_end = raw_input("rong size try anther parameter set new end point")
+                return submarine_end
+                continue
+            else:
+                break
+
+    def collision_or_snap_check(self, row_x, row_y):
+        #while True:
+        try:
+            assert (self.my_cells[row_x,row_y] == 0)
+        except:
+            print('cell already occupied try new position')
+            self.fill_submarines()
+            #     continue
+            # else:
+            #     break
+        try:
+            assert (self.my_cells[row_x + 1, row_y + 1] == 0)
+            assert (self.my_cells[row_x + 0, row_y + 1] == 0)
+            assert (self.my_cells[row_x + 1, row_y + 0] == 0)
+
+            assert (self.my_cells[row_x - 1, row_y - 1] == 0)
+            assert (self.my_cells[row_x - 0, row_y - 1] == 0)
+            assert (self.my_cells[row_x - 1, row_y - 0] == 0)
+
+            assert (self.my_cells[row_x - 1, row_y + 1] == 0)
+            assert (self.my_cells[row_x + 1, row_y - 1] == 0)
+
+        except:
+            self.fill_submarines()
+        return  row_x, row_y
