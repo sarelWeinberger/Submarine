@@ -8,10 +8,10 @@ class CompetitorBord(Bord):
 
     def geuss_submarine(self):
         i_index = raw_input('enter row  num for guessing  submarine position - int between 0-9')
-        self.check_input(i_index)
+        i_index =self.check_input(i_index)
 
         j_index = raw_input('enter column num for guessing  submarine position - int between 0-9')
-        self.check_input(j_index)
+        j_index = self.check_input(j_index)
 
 
 
