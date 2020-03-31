@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBord.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +32,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.bord (1)">
     <configuration name="bord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,9 +143,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bord (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.myBord (1)" />
-        <item itemvalue="Python.bord (1)" />
         <item itemvalue="Python.myBord" />
         <item itemvalue="Python.competitorBord" />
       </list>
@@ -180,46 +183,54 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1585425629945" />
+    <state x="419" y="408" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1585687635905">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="419" y="408" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1280.984@0.0.1280.984" timestamp="1585687635905" />
     <state x="378" y="133" key="#main" timestamp="1585418575843">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="378" y="133" key="#main/0.0.1280.984@0.0.1280.984" timestamp="1585418575843" />
+    <state x="395" y="201" key="#xdebugger.evaluate" timestamp="1585696217786">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="395" y="201" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1585696217786" />
     <state x="420" y="250" key="FileChooserDialogImpl" timestamp="1585425759210">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1259" height="126" key="GridCell.Tab.0.bottom" timestamp="1585607242057">
+    <state width="1259" height="375" key="GridCell.Tab.0.bottom" timestamp="1585696162518">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="126" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
-    <state width="1259" height="126" key="GridCell.Tab.0.center" timestamp="1585607242057">
+    <state width="1259" height="375" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585696162518" />
+    <state width="1259" height="375" key="GridCell.Tab.0.center" timestamp="1585696162517">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="126" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
-    <state width="1259" height="126" key="GridCell.Tab.0.left" timestamp="1585607242057">
+    <state width="1259" height="375" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585696162517" />
+    <state width="1259" height="375" key="GridCell.Tab.0.left" timestamp="1585696162517">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="126" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
-    <state width="1259" height="126" key="GridCell.Tab.0.right" timestamp="1585607242057">
+    <state width="1259" height="375" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585696162517" />
+    <state width="1259" height="375" key="GridCell.Tab.0.right" timestamp="1585696162518">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="126" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585607242057" />
-    <state width="1259" height="325" key="GridCell.Tab.1.bottom" timestamp="1585603250087">
+    <state width="1259" height="375" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585696162518" />
+    <state width="1259" height="375" key="GridCell.Tab.1.bottom" timestamp="1585696164133">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
-    <state width="1259" height="325" key="GridCell.Tab.1.center" timestamp="1585603250087">
+    <state width="1259" height="375" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585696164133" />
+    <state width="1259" height="375" key="GridCell.Tab.1.center" timestamp="1585696164133">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
-    <state width="1259" height="325" key="GridCell.Tab.1.left" timestamp="1585603250087">
+    <state width="1259" height="375" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585696164133" />
+    <state width="1259" height="375" key="GridCell.Tab.1.left" timestamp="1585696164133">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
-    <state width="1259" height="325" key="GridCell.Tab.1.right" timestamp="1585603250087">
+    <state width="1259" height="375" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585696164133" />
+    <state width="1259" height="375" key="GridCell.Tab.1.right" timestamp="1585696164133">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585603250087" />
+    <state width="1259" height="375" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585696164133" />
     <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -234,8 +245,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>132</line>
-          <option name="timeStamp" value="15" />
+          <line>177</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bord.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -248,8 +284,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="my_cells" />
-        <watch expression="MyBord.my_cells" />
+        <watch expression="ValueError" language="Python" />
       </configuration>
     </watches-manager>
   </component>
