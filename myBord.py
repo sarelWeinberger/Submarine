@@ -61,7 +61,7 @@ class MyBord(Bord):
             print(MyBord.my_cells)
 
         def fill_submarine(self):
-            filling_successful = True
+            self.filling_successful = True
             # 1. orientation
             submarine_orientation = raw_input(Bcolors.OKBLUE +'choose "V" to vertical submarine or "H" to horizontal submarine' + Bcolors.ENDC)
             submarine_orientation.upper()
@@ -116,7 +116,7 @@ class MyBord(Bord):
             first_itaration = True
             if submarine_orientation == 'H':
                 for i in range(submarine_column_start, submarine_column_end):
-                    self.filling_successful = self.collision_or_snap_check(submarine_row_start, i, submarine_orientation, first_itaration)
+                    self.collision_or_snap_check(submarine_row_start, i, submarine_orientation, first_itaration)
 
                     if self.filling_successful == True:
                         MyBord.my_cells[submarine_row_start, i] = 1
@@ -129,7 +129,7 @@ class MyBord(Bord):
 
             if submarine_orientation == 'V':
                 for i in range(submarine_row_start, submarine_row_end):
-                    self.filling_successful = self.collision_or_snap_check(i, submarine_column_start, submarine_orientation, first_itaration)
+                    self.collision_or_snap_check(i, submarine_column_start, submarine_orientation, first_itaration)
                     if self.filling_successful == True:
                         MyBord.my_cells[i, submarine_column_start] = 1
                         first_itaration = False
