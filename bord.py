@@ -37,3 +37,36 @@ class Bord:
         #     check_filling(in_index)
         # def check_filling(in_index):
         #     pass
+
+    def length_check(submarine_size, submarine_start, submarine_end):
+        # checking length
+        while True:
+            try:
+                assert ((submarine_end - submarine_start) == submarine_size)
+                return submarine_start, submarine_end
+            except:
+                print(Bcolors.FAIL +"wrong size" + Bcolors.ENDC)
+                submarine_start = raw_input(" try anther parameter set new start point")
+                submarine_start = Bord.check_input(submarine_start)
+                submarine_end = raw_input(" try anther parameter set new end point")
+                submarine_end = Bord.check_input(submarine_end)
+                return submarine_start, submarine_end
+                continue
+            else:
+                break
+
+    def orientation_validation(submarine_orientation):
+        submarine_orientation = submarine_orientation.upper()
+        while True:
+            try:
+                assert submarine_orientation == 'V' or submarine_orientation == 'H'
+                return submarine_orientation
+            except:
+                print("not valid input")
+                submarine_orientation = raw_input(Bcolors.OKBLUE +
+                                                  'choose "V" to vertical submarine or "H" to horizontal submarine' + Bcolors.ENDC)
+                submarine_orientation = submarine_orientation.upper()
+                return submarine_orientation
+                continue
+            else:
+                break
