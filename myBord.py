@@ -61,6 +61,7 @@ class MyBord(Bord):
             print(MyBord.my_cells)
 
         def fill_submarine(self):
+
             self.filling_successful = True
             # 1. orientation
             submarine_orientation = raw_input(Bcolors.OKBLUE +'choose "V" to vertical submarine or "H" to horizontal submarine' + Bcolors.ENDC)
@@ -117,42 +118,39 @@ class MyBord(Bord):
             if submarine_orientation == 'H':
                 for i in range(submarine_column_start, submarine_column_end):
                     self.collision_or_snap_check(submarine_row_start, i, submarine_orientation, first_itaration)
-
-                    if self.filling_successful == True:
+                if self.filling_successful == True:
+                    for i in range(submarine_column_start, submarine_column_end):
                         MyBord.my_cells[submarine_row_start, i] = 1
                         first_itaration = False
-                    if self.filling_successful == False:
-                        # erase this submarine implantation
-                        for i in range(i,submarine_column_start,-1):
-                            MyBord.my_cells[submarine_row_start,i] = 0
-                        self.fill_submarine()
+                else:
+                    self.fill_submarine()
+
+
 
             if submarine_orientation == 'V':
                 for i in range(submarine_row_start, submarine_row_end):
                     self.collision_or_snap_check(i, submarine_column_start, submarine_orientation, first_itaration)
-                    if self.filling_successful == True:
+                if self.filling_successful == True:
+                    for i in range(submarine_row_start, submarine_row_end):
                         MyBord.my_cells[i, submarine_column_start] = 1
                         first_itaration = False
-                    if self.filling_successful == False:
-                        # erase this submarine implantation
-                        for i in range(i,submarine_row_start,-1):
-                            MyBord.my_cells[i,submarine_column_start] = 0
-                        self.fill_submarine()
+                else:
+                    self.fill_submarine()
+
+
             # more fill checking
             # for i in range()
             #
             # self.my_cells[int(submarine_row), int(submarine_column)] = 1
 
         def collision_or_snap_check(self, row_x, row_y, oriantation, first_itaration):
-            while True:
                 try:
                     assert (MyBord.my_cells[row_x, row_y] == 0)
                 except:
-                    print('cell already occupied try new position')
-                    self.fill_submarine()
-                    continue
-                else:
-                    break
+                    print(Bcolors.FAIL + 'cell already occupied try new position' + Bcolors.ENDC)
+                    self.filling_successful == False
+                    #self.fill_submarine()
+
 
             #while True:
                 try:
@@ -165,7 +163,7 @@ class MyBord(Bord):
                     assert (MyBord.my_cells[row_x - 1, row_y + 1] == 0)
                     assert (MyBord.my_cells[row_x + 1, row_y - 1] == 0)
 
-                    print(MyBord.my_cells)
+                    #print(MyBord.my_cells)
                     if first_itaration:
                         assert (MyBord.my_cells[row_x - 0, row_y - 1] == 0)
                         assert (MyBord.my_cells[row_x - 1, row_y - 0] == 0)
@@ -175,9 +173,9 @@ class MyBord(Bord):
                         assert (MyBord.my_cells[row_x - 1, row_y - 0] == 0)
                     self.filling_successful = True
                 except:
-                    print('The cell is adjacent to an existing submarine')
+                    print(Bcolors.FAIL + 'The cell is adjacent to an existing submarine'+ Bcolors.ENDC)
                     self.filling_successful = False
-
+                    #self.fill_submarine()
                     #continue
                 #else:
                     #break
