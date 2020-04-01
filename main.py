@@ -1,6 +1,6 @@
 from notebook.notebookapp import raw_input
-from myBord import MyBord
-from competitorBord import CompetitorBord
+from mybord import MyBord
+from competitorbord import CompetitorBord
 
 
 if __name__ == '__main__':

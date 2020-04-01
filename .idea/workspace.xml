@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competitorBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/competitorbord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/mybord.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="competitorBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="competitorbord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\competitorBord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\competitorbord.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myBord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mybord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myBord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\mybord.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mybord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\myBord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\mybord.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,9 +144,9 @@
       <list>
         <item itemvalue="Python.main" />
         <item itemvalue="Python.bord (1)" />
-        <item itemvalue="Python.myBord (1)" />
-        <item itemvalue="Python.myBord" />
-        <item itemvalue="Python.competitorBord" />
+        <item itemvalue="Python.mybord" />
+        <item itemvalue="Python.mybord" />
+        <item itemvalue="Python.competitorbord" />
       </list>
     </recent_temporary>
   </component>
@@ -246,17 +247,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <url>file://$PROJECT_DIR$/mybord.py</url>
           <line>137</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <url>file://$PROJECT_DIR$/mybord.py</url>
           <line>118</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
+          <url>file://$PROJECT_DIR$/mybord.py</url>
           <line>38</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
