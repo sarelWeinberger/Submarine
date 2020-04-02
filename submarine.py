@@ -10,8 +10,14 @@ class Submarine:
         self.submarine_length = submarine_len
         self.submarine_name = sub_name
 
-    def fill_submarine_request(self):
+        self.submarine_orientation = ''
+        self.submarine_row_start = 0
+        self.submarine_row_end = 0
+        self.submarine_column_start = 0
+        self.submarine_column_end = 0
 
+    def fill_submarine_request(self):
+        self.__init__(self.submarine_length, self.submarine_name)
         # 1. orientation
         self.submarine_orientation = raw_input(
             Bcolors.OKBLUE + 'choose "V" to vertical submarine or "H" to horizontal ' + self.submarine_name + Bcolors.ENDC)

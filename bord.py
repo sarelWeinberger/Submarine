@@ -16,28 +16,24 @@ class Bcolors:
 class Bord:
     ROW_SIZE = 10
     COLUMN_SIZE = 10
+
     cells = np.arange(ROW_SIZE, COLUMN_SIZE)
 
     @staticmethod
-    def check_input(input_index, filling_bord=False, hitting_competitor=False):
+    def check_input(input_index,hitting_competitor=False):
         """checking if the input is relevant to the game"""
         while True:
             try:
                 in_index = int(input_index)
-                assert (int(in_index) > 0 and (int(in_index) <= 10)), "Incorrect input, not an int between 0-10 "
+                assert (int(in_index) > 0 and (int(in_index) <= Bord.ROW_SIZE))
                 return in_index
             except Exception as e:
-                print(Bcolors.FAIL + str(e.args) + Bcolors.ENDC)
+                print(Bcolors.FAIL + str(e.args) + "Incorrect input, not an int between 0 and {}".format(Bord.ROW_SIZE)  + Bcolors.ENDC)
                 new_input = raw_input('try new input')
                 return int(new_input)
                 continue
             else:
                 break
-
-        # if filling_bord:
-        #     check_filling(in_index)
-        # def check_filling(in_index):
-        #     pass
 
     @staticmethod
     def length_check(submarine_size, submarine_start, submarine_end):
@@ -73,7 +69,7 @@ class Bord:
                 break
 
     @staticmethod
-    def collision_or_snap_check(cells, row_x, row_y, orientation, first_iteration):
+    def collision_or_snap_check(cells, row_x, row_y, orientation):
         # collision
         filling_successful = False
         try:
@@ -94,14 +90,8 @@ class Bord:
                 assert (cells[row_x - 1, row_y + 1] == 0)
                 assert (cells[row_x + 1, row_y - 1] == 0)
 
-                # print(MyBord.my_cells)
-                if first_iteration:
-                    assert (cells[row_x - 0, row_y - 1] == 0)
-                    assert (cells[row_x - 1, row_y - 0] == 0)
-                elif orientation == 'V' and first_iteration == False:
-                    assert (cells[row_x - 0, row_y - 1] == 0)
-                elif orientation == 'H' and first_iteration == False:
-                    assert (cells[row_x - 1, row_y - 0] == 0)
+                assert (cells[row_x - 0, row_y - 1] == 0)
+                assert (cells[row_x - 1, row_y - 0] == 0)
 
                 filling_successful = True
             except:

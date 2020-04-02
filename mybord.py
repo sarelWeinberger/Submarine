@@ -18,42 +18,44 @@ class MyBord():
             print("fill {} length , current bord: {}, rows \ columns {} {}".format(submarine_name,'\n', '\n',self.my_cells))
             submarine_name = Submarine(i, submarine_name)
             submarine_name.fill_submarine_request()
-            self.filling_checking(submarine_name)
+            MyBord.checking_before_filling(submarine_name)
             if submarine_name.checking_ok:
-                self.position_the_submarine(submarine_name)
+                MyBord.position_the_submarine(submarine_name)
 
         print("my cells full:  '\n' {} ".format(MyBord.my_cells))
 
     @classmethod
-    def filling_checking(cls,submarine_name):
-        first_iteration = True
+    def checking_before_filling(cls, submarine_name):
         if submarine_name.submarine_orientation == 'H':
             # checking
-            filling_successful = False
             for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):
                 filling_successful = Bord.collision_or_snap_check(cls.my_cells, submarine_name.submarine_row_start, i,
-                                                                  submarine_name.submarine_orientation,
-                                                                  first_iteration)
-                first_itaration = False
-                if not filling_successful:
+                                                                  submarine_name.submarine_orientation)
+                while not filling_successful:
                     submarine_name.fill_submarine_request()
+                    filling_successful = MyBord.checking_before_filling(submarine_name)
+                    if filling_successful:
+                        submarine_name.checking_ok = True
+                        return filling_successful
+                        break
 
-            if filling_successful:
-                submarine_name.checking_ok = True
 
         if submarine_name.submarine_orientation == 'V':
             # checking
-            filling_successful = False
             for i in range(submarine_name.submarine_row_start, submarine_name.submarine_row_end):
                 filling_successful = Bord.collision_or_snap_check(cls.my_cells, i, submarine_name.submarine_column_start,
-                                                                  submarine_name.submarine_orientation,
-                                                                  first_iteration)
-                first_itaration = False
-                if not filling_successful:
+                                                                  submarine_name.submarine_orientation)
+                while not filling_successful:
                     submarine_name.fill_submarine_request()
+                    filling_successful = MyBord.checking_before_filling(submarine_name)
+                    if filling_successful:
+                        submarine_name.checking_ok = True
+                        return filling_successful
+                        break
 
-            if filling_successful:
-                submarine_name.checking_ok = True
+        if filling_successful:
+            submarine_name.checking_ok = True
+            return filling_successful
 
     @classmethod
     def position_the_submarine(cls, submarine_name):
