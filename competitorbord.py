@@ -1,17 +1,17 @@
 from notebook.notebookapp import raw_input
-from bord import Bord
+from board import Board
 
-class CompetitorBord(Bord):
+class CompetitorBord(Board):
     # globals:
     hit_i_index = None
     hit_j_index = None
 
     def geuss_submarine(self):
         i_index = raw_input('enter row  num for guessing  submarine position - int between 0-9')
-        i_index =self.check_input(i_index)
+        i_index =self.check_input_define_in_the_board(i_index)
 
         j_index = raw_input('enter column num for guessing  submarine position - int between 0-9')
-        j_index = self.check_input(j_index)
+        j_index = self.check_input_define_in_the_board(j_index)
 
 
 
