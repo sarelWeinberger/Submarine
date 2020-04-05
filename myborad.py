@@ -5,13 +5,14 @@ from submarine import Submarine
 
 class MyBorad():
     # generals
+
     my_cells = np.zeros((Board.ROW_SIZE + 1, Board.COLUMN_SIZE + 1), dtype=int)
     for i in range(Board.ROW_SIZE + 1):
         my_cells[i, 0] = i
         my_cells[0, i] = i
 
     def __init__(self):
-
+        #print("my cells list: '\n'".format(MyBorad.my_cells_list))
         # TODO: add some condition - when we want the user to fill the board!!!
         for i in range(5, 1, -1):
             submarine_name = 'submarine_' + str(i)
