@@ -1,6 +1,6 @@
 from notebook.notebookapp import raw_input
 from myborad import MyBorad
-from competitorbord import CompetitorBord
+from competitorboard import CompetitorBoard
 
 
 if __name__ == '__main__':
@@ -9,4 +9,4 @@ if __name__ == '__main__':
 
     competitor = raw_input('define your competitor: press 1 to computer and 2 to anther player')
 
-    competitor_bord = CompetitorBord()
+    competitor_bord = CompetitorBoard()

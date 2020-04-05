@@ -2,6 +2,7 @@ import numpy as np
 from notebook.notebookapp import raw_input
 
 
+
 class Bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'

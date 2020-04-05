@@ -1,7 +1,7 @@
 from notebook.notebookapp import raw_input
 from board import Board
 
-class CompetitorBord(Board):
+class CompetitorBoard(Board):
     # globals:
     hit_i_index = None
     hit_j_index = None
@@ -15,21 +15,21 @@ class CompetitorBord(Board):
 
 
 
-    def guess_position(self, i_pos, j_pos, is_praive):
+    def guess_position(self,submarine, i_pos, j_pos, is_praive):
 
-        if is_praive:
-            pass
-
-        # if (submarine[i_pos][j_pos] == 0):  # empty
-        #     print('empty')
-        #     submarine[i_pos][j_pos] == '.'
-        # elif (submarine[i_pos][j_pos] == 1):  # hit submarine
-        #     print('hit submarine')
-        #     submarine[i_pos][j_pos] == '0'
-        # elif (submarine[i_pos][j_pos] == 2):  # submarine
-        #     submarine[i_pos][j_pos] == '0'
-        # elif (submarine[i][j] == 3):  # submarine
-        # elif (submarine[i][j] == 4):  # submarine
+        if submarine[i_pos][j_pos] == 0:  # empty / unchecked
+            return '.'
+        elif submarine[i_pos][j_pos] == 1:
+            if is_praive:
+                return 0
+            else: # the competitor board
+                return '.'
+        elif submarine[i_pos][j_pos] == 2:
+            return '*'
+        elif submarine[i_pos][j_pos] == 3:
+            return '@'
+        elif submarine[i_pos][j_pos] == 4:
+            return '#'
         else:
             print('not a legal number')
             return 1
