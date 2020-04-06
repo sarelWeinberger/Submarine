@@ -31,14 +31,13 @@ class MyBorad():
                 print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name, '\n', '\n',
                                                                                     self.my_cells))
                 submarine_name = Submarine(i, submarine_name)
-            filling_ok = None
-            while not filling_ok:
-                submarine_name.fill_submarine_position()
-                filling_ok = MyBorad.checking_before_filling(submarine_name)
+                filling_ok = None
+                while not filling_ok:
+                    submarine_name.fill_submarine_position()
+                    filling_ok = MyBorad.checking_before_filling(submarine_name)
 
-            if filling_ok:
-                MyBorad.position_the_submarine_on_my_board(submarine_name)
-        return biggest_submarine
+                if filling_ok:
+                    MyBorad.position_the_submarine_on_my_board(submarine_name)
 
     @classmethod
     def checking_before_filling(cls, submarine_name):
