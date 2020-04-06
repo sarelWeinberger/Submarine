@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bcolors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regexexpeir.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competitorboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/competitorboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exerciseboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regexexpeir.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/submarine.py" beforeDir="false" afterPath="$PROJECT_DIR$/submarine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +183,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -224,42 +224,42 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1238" height="289" key="GridCell.Tab.0.bottom" timestamp="1586180539627">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1586184806238">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586180539627" />
-    <state width="1238" height="289" key="GridCell.Tab.0.center" timestamp="1586180539627">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586184806238" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1586184806238">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1586180539627" />
-    <state width="1238" height="289" key="GridCell.Tab.0.left" timestamp="1586180539627">
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1586184806238" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1586184806238">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1586180539627" />
-    <state width="1238" height="289" key="GridCell.Tab.0.right" timestamp="1586180539627">
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1586184806238" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1586184806238">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1586180539627" />
-    <state width="1238" height="289" key="GridCell.Tab.1.bottom" timestamp="1586180543914">
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1586184806238" />
+    <state width="1238" height="256" key="GridCell.Tab.1.bottom" timestamp="1586184215073">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586180543914" />
-    <state width="1238" height="289" key="GridCell.Tab.1.center" timestamp="1586180543914">
+    <state width="1238" height="256" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
+    <state width="1238" height="256" key="GridCell.Tab.1.center" timestamp="1586184215073">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1586180543914" />
-    <state width="1238" height="289" key="GridCell.Tab.1.left" timestamp="1586180543914">
+    <state width="1238" height="256" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
+    <state width="1238" height="256" key="GridCell.Tab.1.left" timestamp="1586184215073">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1586180543914" />
-    <state width="1238" height="289" key="GridCell.Tab.1.right" timestamp="1586180543914">
+    <state width="1238" height="256" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
+    <state width="1238" height="256" key="GridCell.Tab.1.right" timestamp="1586184215073">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="289" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1586180543914" />
-    <state x="418" y="206" key="RollbackChangesDialog" timestamp="1586180220636">
+    <state width="1238" height="256" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
+    <state x="418" y="206" key="RollbackChangesDialog" timestamp="1586183080464">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="418" y="206" key="RollbackChangesDialog/0.0.1280.984@0.0.1280.984" timestamp="1586180220636" />
+    <state x="418" y="206" key="RollbackChangesDialog/0.0.1280.984@0.0.1280.984" timestamp="1586183080464" />
     <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -273,19 +273,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/board.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/submarine.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="64" />
+          <url>file://$PROJECT_DIR$/myborad.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

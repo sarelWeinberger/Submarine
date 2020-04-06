@@ -7,7 +7,6 @@ from notebook.notebookapp import raw_input
 class MyBorad():
     # generals
     is_praive = True
-
     my_cells = np.zeros((Board.ROW_SIZE + 1, Board.COLUMN_SIZE + 1), dtype=int)
     for i in range(Board.ROW_SIZE + 1):
         my_cells[i, 0] = i
@@ -21,8 +20,8 @@ class MyBorad():
 
     def GetSubsFromPlayer(self):
         biggest_submarine = raw_input("define what is your bigger submarine")
-        valid_size_for_the_bigger_submarin = Board.check_bigger_submarine_size_proportional_to_the_board(biggest_submarine)
-        self.fill_board(valid_size_for_the_bigger_submarin)
+        valid_size_for_the_bigger_submarine = Board.check_bigger_submarine_size_proportional_to_the_board(biggest_submarine)
+        self.fill_board(valid_size_for_the_bigger_submarine)
 
     def fill_board(self,biggest_submarine):
         for i in range(biggest_submarine, 1, -1):
@@ -32,49 +31,38 @@ class MyBorad():
                 print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name, '\n', '\n',
                                                                                     self.my_cells))
                 submarine_name = Submarine(i, submarine_name)
-                submarine_name.fill_submarine_request()
-                MyBorad.checking_before_filling(submarine_name)
+            filling_ok = None
+            while not filling_ok:
+                submarine_name.fill_submarine_position()
+                filling_ok = MyBorad.checking_before_filling(submarine_name)
 
-            if submarine_name.checking_ok:
-                MyBorad.position_the_submarine(submarine_name)
-        return  biggest_submarine
+            if filling_ok:
+                MyBorad.position_the_submarine_on_my_board(submarine_name)
+        return biggest_submarine
 
     @classmethod
     def checking_before_filling(cls, submarine_name):
-        filling_successful = False
         if submarine_name.submarine_orientation == 'H':
             # checking
             for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):
                 filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(cls.my_cells, submarine_name.submarine_row_start, i,
                                                                                                      submarine_name.submarine_orientation)
-                while not filling_successful:
-                    submarine_name.fill_submarine_request()
-                    filling_successful = MyBorad.checking_before_filling(submarine_name)
-                    if filling_successful:
-                        submarine_name.checking_ok = True
-                        return filling_successful
-
-
+                if not filling_successful:
+                   return False
 
         if submarine_name.submarine_orientation == 'V':
             # checking
             for i in range(submarine_name.submarine_row_start, submarine_name.submarine_row_end):
                 filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(cls.my_cells, i, submarine_name.submarine_column_start,
                                                                                                      submarine_name.submarine_orientation)
-                while not filling_successful:
-                    submarine_name.fill_submarine_request()
-                    filling_successful = MyBorad.checking_before_filling(submarine_name)
-                    if filling_successful:
-                        submarine_name.checking_ok = True
-                        return filling_successful
+                if not filling_successful:
+                    return False
 
+        return True
 
-        if filling_successful:
-            submarine_name.checking_ok = True
-            return filling_successful
 
     @classmethod
-    def position_the_submarine(cls, submarine_name):
+    def position_the_submarine_on_my_board(cls, submarine_name):
 
         if submarine_name.submarine_orientation == 'H':
             for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):

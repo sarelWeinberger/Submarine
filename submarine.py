@@ -16,7 +16,7 @@ class Submarine:
         self.submarine_column_start = 0
         self.submarine_column_end = 0
 
-    def fill_submarine_request(self):
+    def fill_submarine_position(self):
         self.__init__(self.submarine_length, self.submarine_name)
         # 1. orientation
         self.submarine_orientation = raw_input(

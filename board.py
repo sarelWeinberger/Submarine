@@ -21,7 +21,6 @@ class Board:
                 size = raw_input(Bcolors.FAIL + "not valid size, choose size between 2 to 5")
         #TODO: create eqesion for any size of board
 
-
     @staticmethod
     def cell_position_char(submarine, i_pos, j_pos, is_praive):
 
@@ -125,10 +124,7 @@ class Board:
                     and (cells[row_x - 1, row_y - 0] == 0)):
                 filling_successful = True
             else:
-                print(
-                    Bcolors.FAIL + "The cell is adjacent to an existing submarine {} {}".format('\n',
-                                                                                                    cells
-                                                                                                   ) + Bcolors.ENDC)
+                print(Bcolors.FAIL + "The cell is adjacent to an existing submarine {} {}".format('\n',cells) + Bcolors.ENDC)
                 filling_successful = False
 
         return filling_successful
