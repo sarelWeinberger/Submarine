@@ -1,4 +1,4 @@
-from board import Bcolors
+from bcolors import Bcolors
 from notebook.notebookapp import raw_input
 from board import Board
 

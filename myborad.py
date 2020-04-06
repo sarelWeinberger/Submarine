@@ -1,29 +1,43 @@
 import numpy as np
 from board import Board
 from submarine import Submarine
+from notebook.notebookapp import raw_input
 
 
 class MyBorad():
     # generals
+    is_praive = True
 
     my_cells = np.zeros((Board.ROW_SIZE + 1, Board.COLUMN_SIZE + 1), dtype=int)
     for i in range(Board.ROW_SIZE + 1):
         my_cells[i, 0] = i
         my_cells[0, i] = i
 
-    def __init__(self):
-        #print("my cells list: '\n'".format(MyBorad.my_cells_list))
+    def __init__(self, player_definition):
+        self.player_definition = player_definition # define if the player is a client or a server
         # TODO: add some condition - when we want the user to fill the board!!!
-        for i in range(5, 1, -1):
-            submarine_name = 'submarine_' + str(i)
-            print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name,'\n', '\n',self.my_cells))
-            submarine_name = Submarine(i, submarine_name)
-            submarine_name.fill_submarine_request()
-            MyBorad.checking_before_filling(submarine_name)
+        self.GetSubsFromPlayer()
+        print("my cells full:  '\n' {} ".format(MyBorad.my_cells))
+
+    def GetSubsFromPlayer(self):
+        biggest_submarine = raw_input("define what is your bigger submarine")
+        valid_size_for_the_bigger_submarin = Board.check_bigger_submarine_size_proportional_to_the_board(biggest_submarine)
+        self.fill_board(valid_size_for_the_bigger_submarin)
+
+    def fill_board(self,biggest_submarine):
+        for i in range(biggest_submarine, 1, -1):
+            num_of_submarines_of_that_size = ((biggest_submarine - i) + 1)
+            for j in range(num_of_submarines_of_that_size):
+                submarine_name = 'submarine_of_size_{}_number_{}'.format(i,j+1)
+                print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name, '\n', '\n',
+                                                                                    self.my_cells))
+                submarine_name = Submarine(i, submarine_name)
+                submarine_name.fill_submarine_request()
+                MyBorad.checking_before_filling(submarine_name)
+
             if submarine_name.checking_ok:
                 MyBorad.position_the_submarine(submarine_name)
-
-        print("my cells full:  '\n' {} ".format(MyBorad.my_cells))
+        return  biggest_submarine
 
     @classmethod
     def checking_before_filling(cls, submarine_name):
@@ -39,7 +53,7 @@ class MyBorad():
                     if filling_successful:
                         submarine_name.checking_ok = True
                         return filling_successful
-                        break
+
 
 
         if submarine_name.submarine_orientation == 'V':
@@ -53,7 +67,7 @@ class MyBorad():
                     if filling_successful:
                         submarine_name.checking_ok = True
                         return filling_successful
-                        break
+
 
         if filling_successful:
             submarine_name.checking_ok = True
