@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competitorboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/competitorboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submarine.py" beforeDir="false" afterPath="$PROJECT_DIR$/submarine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,10 +197,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585779407832" />
-    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585425629945">
+    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586249470350">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1585425629945" />
+    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1586249470350" />
     <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586038012459">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -219,46 +225,46 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1238" height="71" key="GridCell.Tab.0.bottom" timestamp="1586185883272">
+    <state width="1238" height="44" key="GridCell.Tab.0.bottom" timestamp="1586253037048">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="71" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586185883272" />
-    <state width="1238" height="71" key="GridCell.Tab.0.center" timestamp="1586185883272">
+    <state width="1238" height="44" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586253037048" />
+    <state width="1238" height="44" key="GridCell.Tab.0.center" timestamp="1586253037047">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="71" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1586185883272" />
-    <state width="1238" height="71" key="GridCell.Tab.0.left" timestamp="1586185883272">
+    <state width="1238" height="44" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1586253037047" />
+    <state width="1238" height="44" key="GridCell.Tab.0.left" timestamp="1586253037047">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="71" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1586185883272" />
-    <state width="1238" height="71" key="GridCell.Tab.0.right" timestamp="1586185883272">
+    <state width="1238" height="44" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1586253037047" />
+    <state width="1238" height="44" key="GridCell.Tab.0.right" timestamp="1586253037048">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="71" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1586185883272" />
-    <state width="1238" height="256" key="GridCell.Tab.1.bottom" timestamp="1586184215073">
+    <state width="1238" height="44" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1586253037048" />
+    <state width="1238" height="392" key="GridCell.Tab.1.bottom" timestamp="1586249952962">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="256" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
-    <state width="1238" height="256" key="GridCell.Tab.1.center" timestamp="1586184215073">
+    <state width="1238" height="392" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586249952962" />
+    <state width="1238" height="392" key="GridCell.Tab.1.center" timestamp="1586249952962">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="256" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
-    <state width="1238" height="256" key="GridCell.Tab.1.left" timestamp="1586184215073">
+    <state width="1238" height="392" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1586249952962" />
+    <state width="1238" height="392" key="GridCell.Tab.1.left" timestamp="1586249952962">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="256" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
-    <state width="1238" height="256" key="GridCell.Tab.1.right" timestamp="1586184215073">
+    <state width="1238" height="392" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1586249952962" />
+    <state width="1238" height="392" key="GridCell.Tab.1.right" timestamp="1586249952962">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="256" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1586184215073" />
+    <state width="1238" height="392" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1586249952962" />
     <state x="418" y="206" key="RollbackChangesDialog" timestamp="1586183080464">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="418" y="206" key="RollbackChangesDialog/0.0.1280.984@0.0.1280.984" timestamp="1586183080464" />
-    <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
+    <state x="143" y="137" key="SettingsEditor" timestamp="1586249447945">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="143" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1585425620878" />
+    <state x="143" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1586249447945" />
     <state x="381" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1585454414193">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -269,8 +275,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myborad.py</url>
-          <line>63</line>
+          <line>62</line>
           <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/board.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

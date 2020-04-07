@@ -7,12 +7,10 @@ from notebook.notebookapp import raw_input
 class MyBorad():
     # generals
     is_praive = True
-    my_cells = np.zeros((Board.ROW_SIZE + 1, Board.COLUMN_SIZE + 1), dtype=int)
-    for i in range(Board.ROW_SIZE + 1):
-        my_cells[i, 0] = i
-        my_cells[0, i] = i
+    my_cells = Board.board_cells
 
     def __init__(self, player_definition):
+
         self.player_definition = player_definition # define if the player is a client or a server
         # TODO: add some condition - when we want the user to fill the board!!!
         self.GetSubsFromPlayer()
@@ -37,6 +35,7 @@ class MyBorad():
                     filling_ok = MyBorad.checking_before_filling(submarine_name)
 
                 if filling_ok:
+                    submarine_name.define_all_cells_positive()
                     MyBorad.position_the_submarine_on_my_board(submarine_name)
 
     @classmethod

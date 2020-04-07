@@ -1,4 +1,3 @@
-from notebook.notebookapp import raw_input
 from board import Board
 
 
@@ -11,10 +10,10 @@ class CompetitorBoard():
          self.competitor = competitor
 
     def geuss_submarine(self):
-        i_index = raw_input('enter row  num for guessing  submarine position - int between 0 and {}'.format(Board.ROW_SIZE))
+        i_index = input('enter row  num for guessing  submarine position - int between 0 and {}'.format(Board.ROW_SIZE))
         i_index = Board.check_input_define_in_the_board(i_index)
 
-        j_index = raw_input('enter column num for guessing  submarine position - int between 0 AND {}'.format(Board.COLUMN_SIZE))
+        j_index = input('enter column num for guessing  submarine position - int between 0 AND {}'.format(Board.COLUMN_SIZE))
         j_index = Board.check_input_define_in_the_board(j_index)
 
 
