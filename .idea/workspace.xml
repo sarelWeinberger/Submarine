@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competitorboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/competitorboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submarine.py" beforeDir="false" afterPath="$PROJECT_DIR$/submarine.py" afterDir="false" />
-    </list>
+    <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
