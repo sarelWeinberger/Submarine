@@ -7,6 +7,10 @@ import re
 class Board:
     ROW_SIZE = 10
     COLUMN_SIZE = 10
+    board_cells = np.zeros((ROW_SIZE + 1, COLUMN_SIZE + 1), dtype=int)
+    for i in range(ROW_SIZE + 1):
+        board_cells[i, 0] = i
+        board_cells[0, i] = i
 
     @staticmethod
     def check_bigger_submarine_size_proportional_to_the_board(size):
@@ -22,20 +26,20 @@ class Board:
         #TODO: create eqesion for any size of board
 
     @staticmethod
-    def cell_position_char(submarine, i_pos, j_pos, is_praive):
+    def transform_cell_value_to_graphic_char(cell_val, is_praive):
 
-        if submarine[i_pos][j_pos] == 0:  # empty / unchecked
+        if cell_val == 0:  # empty / unchecked
             return '.'
-        elif submarine[i_pos][j_pos] == 1:
+        elif cell_val == 1:
             if is_praive:
                 return 0
             else:  # the competitor board
                 return '.'
-        elif submarine[i_pos][j_pos] == 2:
+        elif cell_val == 2:
             return '*'
-        elif submarine[i_pos][j_pos] == 3:
+        elif cell_val == 3:
             return '@'
-        elif submarine[i_pos][j_pos] == 4:
+        elif cell_val == 4:
             return '#'
         else:
             print('not a legal number')
