@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBord.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="bord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="board" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,7 +44,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\board.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +53,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="competitorBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exerciseboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\competitorBord.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exerciseboard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myBord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="myborad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +107,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myBord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\myborad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mybord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\myBord.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\mybord.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.bord (1)" />
-        <item itemvalue="Python.myBord (1)" />
-        <item itemvalue="Python.myBord" />
-        <item itemvalue="Python.competitorBord" />
+        <item itemvalue="Python.exerciseboard" />
+        <item itemvalue="Python.board" />
+        <item itemvalue="Python.myborad" />
+        <item itemvalue="Python.myborad" />
       </list>
     </recent_temporary>
   </component>
@@ -172,15 +170,30 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="232" y="153" key="#Inspections" timestamp="1585606190605">
+    <state x="232" y="153" key="#Inspections" timestamp="1585779407832">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585606190605" />
+    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585779407832" />
     <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585425629945">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1585425629945" />
+    <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586038012459">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.984@0.0.1280.984" timestamp="1586038012459" />
     <state x="419" y="408" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1585687635905">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -193,46 +206,46 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="395" y="201" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1585696217786" />
-    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog" timestamp="1585696810283">
+    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog" timestamp="1586035144896">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog/0.0.1280.984@0.0.1280.984" timestamp="1585696810283" />
+    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog/0.0.1280.984@0.0.1280.984" timestamp="1586035144896" />
     <state x="420" y="250" key="FileChooserDialogImpl" timestamp="1585425759210">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1259" height="26" key="GridCell.Tab.0.bottom" timestamp="1585702297804">
+    <state width="1238" height="274" key="GridCell.Tab.0.bottom" timestamp="1586078428125">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585702297804" />
-    <state width="1259" height="26" key="GridCell.Tab.0.center" timestamp="1585702297803">
+    <state width="1238" height="274" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586078428125" />
+    <state width="1238" height="274" key="GridCell.Tab.0.center" timestamp="1586078428125">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585702297803" />
-    <state width="1259" height="26" key="GridCell.Tab.0.left" timestamp="1585702297803">
+    <state width="1238" height="274" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1586078428125" />
+    <state width="1238" height="274" key="GridCell.Tab.0.left" timestamp="1586078428125">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585702297803" />
-    <state width="1259" height="26" key="GridCell.Tab.0.right" timestamp="1585702297804">
+    <state width="1238" height="274" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1586078428125" />
+    <state width="1238" height="274" key="GridCell.Tab.0.right" timestamp="1586078428125">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585702297804" />
-    <state width="629" height="393" key="GridCell.Tab.1.bottom" timestamp="1585700549815">
+    <state width="1238" height="274" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1586078428125" />
+    <state width="1238" height="289" key="GridCell.Tab.1.bottom" timestamp="1586078123699">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.center" timestamp="1585700549815">
+    <state width="1238" height="289" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1586078123699" />
+    <state width="1238" height="289" key="GridCell.Tab.1.center" timestamp="1586078123699">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.left" timestamp="1585700549815">
+    <state width="1238" height="289" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1586078123699" />
+    <state width="1238" height="289" key="GridCell.Tab.1.left" timestamp="1586078123699">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.right" timestamp="1585700549815">
+    <state width="1238" height="289" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1586078123699" />
+    <state width="1238" height="289" key="GridCell.Tab.1.right" timestamp="1586078123699">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
+    <state width="1238" height="289" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1586078123699" />
     <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -246,24 +259,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>137</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/board.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/board.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/exerciseboard.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bord.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/exerciseboard.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
