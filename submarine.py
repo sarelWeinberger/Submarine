@@ -1,10 +1,12 @@
 from bcolors import Bcolors
-from notebook.notebookapp import raw_input
 from board import Board
 import numpy as np
+from checkinput import check_input
+from coordinate import get_coordinate
 
 
 class Submarine:
+    basic_check = False
 
     def __init__(self, submarine_len, sub_name):
         self.checking_ok = False
@@ -21,71 +23,63 @@ class Submarine:
     def fill_submarine_position(self):
         self.__init__(self.submarine_length, self.submarine_name)
         # 1. orientation
-        self.submarine_orientation = raw_input(
+        self.submarine_orientation = input(
             Bcolors.OKBLUE + 'choose "V" to vertical submarine or "H" to horizontal ' + self.submarine_name + Bcolors.ENDC)
-        self.submarine_orientation = Board.submarine_orientation_input_validation(self.submarine_orientation)
+        self.submarine_orientation = check_input(self.submarine_orientation, 'orientation')
 
         # 2. define stat point and end point
-        # a. row start:
-        self.submarine_row_start = raw_input(Bcolors.OKGREEN +
-                                             'choose row for the {} size submarine starting point - the small number in the index'.format(
-                                                 self.submarine_name) + Bcolors.ENDC)
-        self.submarine_row_start = Board.check_input_define_in_the_board(self.submarine_row_start)
+        # a. row and column start point:
+        self.submarine_row_start, self.submarine_column_start = get_coordinate(self.submarine_name,
+                                                                               Submarine.basic_check)
 
         # b. row end
         if self.submarine_orientation == 'V':
-            self.submarine_row_end = raw_input(Bcolors.OKGREEN +
-                                               'choose row for the {} size submarine end point - the big number in the index'.format(
-                                                   self.submarine_name) + Bcolors.ENDC)
-            self.submarine_row_end = Board.check_input_define_in_the_board(self.submarine_row_end)
-            submarine_row_start, submarine_row_end = Board.submarine_legal_length_check(self.submarine_length,
-                                                                                        self.submarine_row_start,
-                                                                                        self.submarine_row_end)
+            self.submarine_row_end = self.submarine_row_start + self.submarine_length
 
-        # c. column start
-        self.submarine_column_start = raw_input(
-            'choose column for the {} size submarine start point - the small number in the index'.format(
-                self.submarine_name))
-        self.submarine_column_start = Board.check_input_define_in_the_board(self.submarine_column_start)
-
-        # d. column end
+        # c. column end
         if self.submarine_orientation == 'H':
-            self.submarine_column_end = raw_input(
-                'choose column for the {} size submarine end point - the big number in the index'.format(
-                    self.submarine_name))
-            self.submarine_column_end = Board.check_input_define_in_the_board(self.submarine_column_end)
-            submarine_column_start, submarine_column_end = Board.submarine_legal_length_check(self.submarine_length,
-                                                                                              self.submarine_column_start,
-                                                                                              self.submarine_column_end)
-    def define_all_cells_positive(self):
+            self.submarine_column_end = self.submarine_column_start + self.submarine_length
 
-            cells_list = [SubCell() for i in range(self.submarine_length)]
-            for cell in cells_list:
-                cell.cell_status = 1
-                cell.oriantation = self.submarine_orientation
+    def define_cells(self):
+        cells_list = [SubCell() for i in range(self.submarine_length)]
+        for i, cell in enumerate(cells_list):
+            cell.cell_status = 1
+            cell.oriantation = self.submarine_orientation
+            cell.submarine_name = self.submarine_name
+            cell.submarine_lenght = self.submarine_length
+            cell.cell_pos_in_sub = i
 
-    def hit(self,pos):
+        return cells_list
+
+    #stage 8:
+    def hit(self, pos):
         self.cells_list[pos] = 0
         if self.cells_list.sum() == 0:
             self.is_dead = True
 
 
+# stage 7:
 class SubCell:
     def __init__(self):
         self.oriantation = ''
         self.x = 0
         self.y = 0
         self.cell_status = 0
+        self.submarine_name = ''
+        self.submarine_lenght = 0
+        self.cell_pos_in_sub = 0
+        self.legal_cell = not(self.isAdjacent())
 
     def SetSub(self, new_status):
         self.cell_status = new_status
 
-    def get_and_return_sub_pos(self):
-        pass
+    def get_and_return_sub_pos(self, x, y):
+        self.x = x
+        self.y = y
 
     def Hit(self, hit_pos):
         pass
 
     def isAdjacent(self):
-        pass
-
+        #this method is not relvant to the subcell obj bat to the board.
+        return False
