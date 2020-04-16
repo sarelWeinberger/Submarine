@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/checkinput.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coordinate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exerciseboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submarine.py" beforeDir="false" afterPath="$PROJECT_DIR$/submarine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +17,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/channging_sumarine_class_after_ofek" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZlfHEtKLo9ws7ft71DEalUtSCR" />
@@ -152,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python.regexexpeir" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.exerciseboard" />
         <item itemvalue="Python.board (1)" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python.regexexpeir" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +167,13 @@
       <option name="presentableId" value="Default" />
       <updated>1585418511403</updated>
     </task>
+    <task id="LOCAL‎00001" summary="to stage 11, need some corrections">
+      <created>1587029016563</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1587029016563</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -195,6 +198,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="to stage 11, need some corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="to stage 11, need some corrections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="153" key="#Inspections" timestamp="1585779407832">
@@ -221,6 +228,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="395" y="201" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1585696217786" />
+    <state x="306" y="90" key="CommitChangelistDialog2" timestamp="1587029015560">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="306" y="90" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1587029015560" />
     <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog" timestamp="1586035144896">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -229,22 +240,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587021768149" />
-    <state width="1238" height="503" key="GridCell.Tab.0.bottom" timestamp="1587021066759">
+    <state width="1238" height="503" key="GridCell.Tab.0.bottom" timestamp="1587029232333">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="503" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587021066759" />
-    <state width="1238" height="503" key="GridCell.Tab.0.center" timestamp="1587021066758">
+    <state width="1238" height="503" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587029232333" />
+    <state width="1238" height="503" key="GridCell.Tab.0.center" timestamp="1587029232333">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="503" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1587021066758" />
-    <state width="1238" height="503" key="GridCell.Tab.0.left" timestamp="1587021066758">
+    <state width="1238" height="503" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1587029232333" />
+    <state width="1238" height="503" key="GridCell.Tab.0.left" timestamp="1587029232333">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="503" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1587021066758" />
-    <state width="1238" height="503" key="GridCell.Tab.0.right" timestamp="1587021066759">
+    <state width="1238" height="503" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1587029232333" />
+    <state width="1238" height="503" key="GridCell.Tab.0.right" timestamp="1587029232333">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1238" height="503" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1587021066759" />
+    <state width="1238" height="503" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1587029232333" />
     <state width="1259" height="410" key="GridCell.Tab.1.bottom" timestamp="1586846876439">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
