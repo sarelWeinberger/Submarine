@@ -5,9 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submarine.py" beforeDir="false" afterPath="$PROJECT_DIR$/submarine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,38 +245,38 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587066425044" />
-    <state width="1259" height="380" key="GridCell.Tab.0.bottom" timestamp="1587255619035">
+    <state width="1259" height="157" key="GridCell.Tab.0.bottom" timestamp="1587264836033">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="380" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587255619035" />
-    <state width="1259" height="380" key="GridCell.Tab.0.center" timestamp="1587255619035">
+    <state width="1259" height="157" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587264836033" />
+    <state width="1259" height="157" key="GridCell.Tab.0.center" timestamp="1587264836033">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="380" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1587255619035" />
-    <state width="1259" height="380" key="GridCell.Tab.0.left" timestamp="1587255619035">
+    <state width="1259" height="157" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1587264836033" />
+    <state width="1259" height="157" key="GridCell.Tab.0.left" timestamp="1587264836033">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="380" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1587255619035" />
-    <state width="1259" height="380" key="GridCell.Tab.0.right" timestamp="1587255619035">
+    <state width="1259" height="157" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1587264836033" />
+    <state width="1259" height="157" key="GridCell.Tab.0.right" timestamp="1587264836033">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="380" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1587255619035" />
-    <state width="1259" height="89" key="GridCell.Tab.1.bottom" timestamp="1587255565913">
+    <state width="1259" height="157" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1587264836033" />
+    <state width="1259" height="468" key="GridCell.Tab.1.bottom" timestamp="1587264022366">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="89" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587255565913" />
-    <state width="1259" height="89" key="GridCell.Tab.1.center" timestamp="1587255565913">
+    <state width="1259" height="468" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587264022366" />
+    <state width="1259" height="468" key="GridCell.Tab.1.center" timestamp="1587264022366">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="89" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1587255565913" />
-    <state width="1259" height="89" key="GridCell.Tab.1.left" timestamp="1587255565913">
+    <state width="1259" height="468" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1587264022366" />
+    <state width="1259" height="468" key="GridCell.Tab.1.left" timestamp="1587264022366">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="89" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1587255565913" />
-    <state width="1259" height="89" key="GridCell.Tab.1.right" timestamp="1587255565913">
+    <state width="1259" height="468" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1587264022366" />
+    <state width="1259" height="468" key="GridCell.Tab.1.right" timestamp="1587264022366">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="89" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1587255565913" />
+    <state width="1259" height="468" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1587264022366" />
     <state x="633" y="242" key="RollbackChangesDialog" timestamp="1586772557729">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -294,29 +294,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myborad.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/competitorboard.py</url>
           <line>9</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/server.py</url>
-          <line>49</line>
+          <line>56</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/client.py</url>
-          <line>19</line>
+          <line>25</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myborad.py</url>
-          <line>45</line>
+          <line>52</line>
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/server.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

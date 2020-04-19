@@ -19,6 +19,7 @@ class Submarine:
         self.submarine_column_start = 0
         self.submarine_column_end = 0
         self.is_dead = False
+        self.cells_list = []
 
     def fill_submarine_position(self):
         self.__init__(self.submarine_length, self.submarine_name)
@@ -41,15 +42,15 @@ class Submarine:
             self.submarine_column_end = self.submarine_column_start + self.submarine_length
 
     def define_cells(self):
-        cells_list = [SubCell() for i in range(self.submarine_length)]
-        for i, cell in enumerate(cells_list):
+        self.cells_list = [SubCell() for i in range(self.submarine_length)]
+        for i, cell in enumerate(self.cells_list):
             cell.cell_status = 1
             cell.oriantation = self.submarine_orientation
             cell.submarine_name = self.submarine_name
             cell.submarine_lenght = self.submarine_length
             cell.cell_pos_in_sub = i
 
-        return cells_list
+        return self.cells_list
 
     #stage 8:
     def hit(self, pos):
@@ -69,6 +70,7 @@ class SubCell:
         self.submarine_lenght = 0
         self.cell_pos_in_sub = 0
         self.legal_cell = not(self.isAdjacent())
+        self.hit = False
 
     def SetSub(self, new_status):
         self.cell_status = new_status
@@ -77,8 +79,10 @@ class SubCell:
         self.x = x
         self.y = y
 
-    def Hit(self, hit_pos):
-        pass
+    def cell_hit(self, hit):
+        if hit:
+            self.cell_status = 0
+            self.hit = True
 
     def isAdjacent(self):
         #this method is not relvant to the subcell obj bat to the board.

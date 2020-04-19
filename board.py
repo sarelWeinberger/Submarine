@@ -47,28 +47,32 @@ class Board:
         return True
 
     @classmethod
-    def add_the_submarine_to_board(cls, submarine_name, cell_list):
+    def add_the_submarine_to_board(cls, submarine_name):
         cell_pos_in_sub = 0
         if submarine_name.submarine_orientation == 'H':
-            for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):
+            for j,i in enumerate(range(submarine_name.submarine_column_start, submarine_name.submarine_column_end)):
                 cls.board_cells[submarine_name.submarine_row_start, i] = 1
+                submarine_name.cells_list[j].x = submarine_name.submarine_row_start
+                submarine_name.cells_list[j].y = i
 
                 # fill SubCell
                 # check
-                if cell_pos_in_sub != cell_list[cell_pos_in_sub].cell_pos_in_sub:
+                if cell_pos_in_sub != submarine_name.cells_list[cell_pos_in_sub].cell_pos_in_sub:
                     print(f'{cell_pos_in_sub} not follow the submarine position')
-                cell_list[cell_pos_in_sub].get_and_return_sub_pos(submarine_name.submarine_row_start, i)
+                submarine_name.cells_list[cell_pos_in_sub].get_and_return_sub_pos(submarine_name.submarine_row_start, i)
                 cell_pos_in_sub += 1
 
         if submarine_name.submarine_orientation == 'V':
-            for i in range(submarine_name.submarine_row_start, submarine_name.submarine_row_end):
+            for j,i in enumerate(range(submarine_name.submarine_row_start, submarine_name.submarine_row_end)):
                 cls.board_cells[i, submarine_name.submarine_column_start] = 1
+                submarine_name.cells_list[j].x = i
+                submarine_name.cells_list[j].y = submarine_name.submarine_column_start
 
                 # fill SubCell
                 # check
-                if cell_pos_in_sub != cell_list[cell_pos_in_sub].cell_pos_in_sub:
+                if cell_pos_in_sub != submarine_name.cells_list[cell_pos_in_sub].cell_pos_in_sub:
                     print(f'{cell_pos_in_sub} not follow the submarine position')
-                cell_list[cell_pos_in_sub].get_and_return_sub_pos(i, submarine_name.submarine_column_start)
+                submarine_name.cells_list[cell_pos_in_sub].get_and_return_sub_pos(i, submarine_name.submarine_column_start)
                 cell_pos_in_sub += 1
 
     @staticmethod
@@ -100,18 +104,17 @@ class Board:
         return filling_successful
 
     def transform_all_cell_value_to_graphic_char(self, is_praive):
-        print(Board.board_grafic_cells)
+        #print(Board.board_grafic_cells)
         for i in range(Board.ROW_SIZE):
             for j in range(Board.COLUMN_SIZE):
                 # Board.board_grafic_cells[i][j] = '0'
                 # TODO: ADDING INDEX FOR THE GRAPIC EXHIBITION OF ROWS AND COLUMNS
                 cell_val = Board.board_cells[i+1, j+1]
                 grapic_cell = transform_cell_value_to_graphic_char(Board.board_cells[i+1, j+1], is_praive)
-
-            Board.board_grafic_cells[i+1][j+1] = grapic_cell
+                Board.board_grafic_cells[i+1][j+1] = grapic_cell
         print('from board_grafic_cells method ')
-        for i in  Board.board_grafic_cells:
-            print(i)
+        # for i in  Board.board_grafic_cells:
+        #     print(i)
         return Board.board_grafic_cells
 
 

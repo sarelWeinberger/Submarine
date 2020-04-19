@@ -1,5 +1,6 @@
 import socket
 import pickle
+from server import Server
 from myborad import MyBorad
 
 PORT_NUM = 5050
@@ -11,7 +12,12 @@ class Clinent:
         print('starting')
         ip = socket.gethostname()
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client_socket.connect((ip, PORT_NUM))
+        try:
+            client_socket.connect((ip, PORT_NUM))
+        except:
+            print('you are the first to connect, you will be connect as a server')
+            player1 = Server()
+
         #client_socket.setblocking(False)
         # user_name = input('your name:')
         #client_socket.send(user_name.encode(FORMAT))

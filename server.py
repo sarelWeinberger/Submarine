@@ -24,7 +24,9 @@ class Server:
         self.dead = False
         first_itatation = True
 
-        grafic_board = server_bord.transform_all_cell_value_to_graphic_char(True)
+        # grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
+        # for i in grafic_board:
+        #     print(f'{i}')
         while True:
             client_socket, address = my_socket.accept()
             print(f'connection from socket {address} ,ipv4, succeed')
@@ -36,46 +38,69 @@ class Server:
             connection = True
             while connection:
                 # 1. sending the board condition
-                grafic_board = server_bord.transform_all_cell_value_to_graphic_char(True)
-                # for i in grafic_board:
-                #     print(i)
+                grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
+                for i in grafic_board:
+                    print(f'{i}')
 
                 grafic_to_send = pickle.dumps(grafic_board)
-                # for i in grafic_to_send:
-                #     print(i)
-                client_socket.send(grafic_to_send)# --> THE PRIVET VERSION
+
+                try:
+                    client_socket.send(grafic_to_send)# --> THE PRIVET VERSION
+                except:
+                    print('seding grafig board problem')
+                    #connection = False;
+                    #client_socket.close()
 
                 # 2. asking for hitting gassing
                 msg_pos_x = pickle.dumps('DEFINE X POS FOR HIT')
-                client_socket.send(msg_pos_x) #(bytes('DEFINE X POS FOR HIT'), encoding='utf8')
+                try:
+                    client_socket.send(msg_pos_x) #(bytes('DEFINE X POS FOR HIT'), encoding='utf8')
+                except Exception as e:
+                    print(e.args)
                 # try:
                 #     hit_position_X = client_socket.recv(2048).decode(FORMAT) # TODO: PASS A HEADER OF MESSAGE SIZE, create new thread
                 #except:
-                hit_position_X = client_socket.recv(1024)
-                hit_position_X = pickle.loads(hit_position_X)
+                try:
+                    hit_position_X = client_socket.recv(1024)
+                    hit_position_X = pickle.loads(hit_position_X)
 
-                if hit_position_X: # checking massage is valid in the first time
-                    hit_position_X = int(hit_position_X)
+                    if hit_position_X: # checking massage is valid in the first time
+                        hit_position_X = int(hit_position_X)
 
+                except Exception as e:
+                    print(e.args)
                 # try:
                 #     client_socket.send(bytes('DIFINE Y POS FOR HIT'), encoding=FORMAT)
                 # except:
-                msg_pos_y =  pickle.dumps('DEFINE y POS FOR HIT')
-                client_socket.send(msg_pos_y)
+                try:
+                    msg_pos_y =  pickle.dumps('DEFINE y POS FOR HIT')
+                    client_socket.send(msg_pos_y)
+
                 # try:
                 #     hit_position_Y = client_socket.recv(2048).decode(FORMAT)
                 # except:
-                hit_position_Y = client_socket.recv(1024)
-                hit_position_Y = pickle.loads(hit_position_Y)
+                    hit_position_Y = client_socket.recv(1024)
+                    hit_position_Y = pickle.loads(hit_position_Y)
 
-                hit_position_Y = int(hit_position_Y)
+                    hit_position_Y = int(hit_position_Y)
+                except:
+                    input('pos y error')
 
-                server_bord.hits(hit_position_X, hit_position_Y)
+                try:
+                    if hit_position_X and hit_position_Y:
+                        msg = server_bord.hits(hit_position_X, hit_position_Y)
+                        msg = pickle.dumps(msg)
+                        client_socket.send(msg)
+
+                except:
+                        print('position input problem')
+                        #connection = False;
 
                 # geiitng the same q from the client (in application level)
                 if server_bord.all_subs_dead == True:
                      self.dead = True
                      print("client won!!!")
-                     client_socket.send(bytes('you win the gmae!!'), FORMAT)
+                     client_socket.send(bytes('you win the game!!'), FORMAT)
                      connection = False;
                      client_socket.close()
+        client_socket.close()
