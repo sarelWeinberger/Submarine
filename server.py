@@ -1,6 +1,7 @@
 import socket
 from myborad import MyBorad
 import pickle
+from bcolors import Bcolors
 
 FORMAT = 'utf-8'
 PORT_NUM = 5050
@@ -38,11 +39,12 @@ class Server:
             connection = True
             while connection:
                 # 1. sending the board condition
-                grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
-                for i in grafic_board:
+                my_grafic_board = server_bord.transform_all_cell_value_to_graphic_char(True)
+                for i in my_grafic_board:
                     print(f'{i}')
 
-                grafic_to_send = pickle.dumps(grafic_board)
+                other_grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
+                grafic_to_send = pickle.dumps(other_grafic_board)
 
                 try:
                     client_socket.send(grafic_to_send)# --> THE PRIVET VERSION
@@ -92,8 +94,8 @@ class Server:
                         msg = pickle.dumps(msg)
                         client_socket.send(msg)
 
-                except:
-                        print('position input problem')
+                except Exception as e:
+                        print(f'general position input problem, {e.args}')
                         #connection = False;
 
                 # geiitng the same q from the client (in application level)

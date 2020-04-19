@@ -62,7 +62,7 @@ class MyBorad(Board):
 
             # connect to the sub-object and see if see destroyed
             self.board_cells[pos_x_hit, pos_y_hit] = 3
-            return 'hit succeed'
+            return 'you hit succeed'
         if self.board_grafic_cells == 2:
             return ('you already miss this point')
 
@@ -75,13 +75,15 @@ class MyBorad(Board):
 
     def updating_submarine_and_check_if_destroyed(self,pos_x_hit,pos_y_hit):
         for sub in self.submarine_list:
+            cells_status = 0
             for cell in sub.cells_list:
                 if cell.x == pos_x_hit and cell.y == pos_y_hit:
                     cell.cell_hit(True)
-            if sum(sub.cells_list.cell_status) == 0:
-                print(f'submarine {sub.cells_list.submarine_name} destroys')
-                self.surround_destroys_submarine()
-                return True
+                cells_status += cell.cell_status
+                if cell == 0:
+                    print(f'submarine {sub.cells_list.submarine_name} destroys')
+                    self.surround_destroys_submarine()
+                    return True
 
     def surround_destroys_submarine(self):
         #TODO: surround destroys subs
@@ -90,7 +92,8 @@ class MyBorad(Board):
     def chech_if_all_destroys(self):
         total_cells = 0
         for sub in self.submarine_list:
-            total_cells += sum(sub.cells_list.cell_status)
+            for cell in sub:
+               total_cells += cell.cell_status
         if total_cells == 0:
             self.all_subs_dead = True
             return 'all subs destroys'

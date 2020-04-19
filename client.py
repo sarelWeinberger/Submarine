@@ -40,7 +40,6 @@ class Clinent:
                     client_socket.send(msg)
 
             except:
-                #client_socket.send(bytes('DEFINE X POS FOR HIT'), 'utf8')
                 decode_msg = str(msg, FORMAT)
                 print(decode_msg)
                 msg = input('input' + decode_msg)
@@ -48,6 +47,3 @@ class Clinent:
             # check input
                 msg = bytes(msg, FORMAT)
                 client_socket.send(msg)
-                    #client_socket.send(msg)
-                #print('leaving the app')
-                    #print(msg.decode("utf-8"))
