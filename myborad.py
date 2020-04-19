@@ -49,6 +49,7 @@ class MyBorad(Board):
             self.board_cells[pos_x,pos_y] = 3
         else:
             print('you miss')
+
         if self.all_subs_dead == True:
             print('all subs destroys you won!')
             return True

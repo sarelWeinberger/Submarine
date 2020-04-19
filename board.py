@@ -7,11 +7,22 @@ class Board:
     ROW_SIZE = 10
     COLUMN_SIZE = 10
     board_cells = np.zeros((ROW_SIZE + 1, COLUMN_SIZE + 1), dtype=int)
+
+    board_grafic_cells = []
+
+    # for i in range(11):
+    #         board_grafic_cells.append([0]*11)  --> rewrite in list comprehension:
+
+    board_grafic_cells = [[0] * (10 + 1) for i in range(COLUMN_SIZE + 1)]
+
     for i in range(ROW_SIZE + 1):
         board_cells[i, 0] = i
         board_cells[0, i] = i
+        board_grafic_cells[0][i] = i
+        board_grafic_cells[i][0] = i
 
-    board_grafic_cells = [[]]
+    for i in board_grafic_cells:
+        print(i)
 
     @classmethod
     def checking_before_filling(cls, submarine_name):
@@ -89,27 +100,38 @@ class Board:
         return filling_successful
 
     def transform_all_cell_value_to_graphic_char(self, is_praive):
+        print(Board.board_grafic_cells)
         for i in range(Board.ROW_SIZE):
             for j in range(Board.COLUMN_SIZE):
+                # Board.board_grafic_cells[i][j] = '0'
                 # TODO: ADDING INDEX FOR THE GRAPIC EXHIBITION OF ROWS AND COLUMNS
-                Board.board_grafic_cells[i, j] = Board.transform_cell_value_to_graphic_char(Board.board_cells[i,j],is_praive)
+                cell_val = Board.board_cells[i+1, j+1]
+                grapic_cell = transform_cell_value_to_graphic_char(Board.board_cells[i+1, j+1], is_praive)
 
-    @staticmethod
-    def transform_cell_value_to_graphic_char(cell_val, is_praive):
+            Board.board_grafic_cells[i+1][j+1] = grapic_cell
+        print('from board_grafic_cells method ')
+        for i in  Board.board_grafic_cells:
+            print(i)
+        return Board.board_grafic_cells
 
-        if cell_val == 0:  # empty / unchecked
+
+def transform_cell_value_to_graphic_char(cell_val, is_praive):
+    if cell_val == 0:  # empty / unchecked
+        return '.'
+    elif cell_val == 1:  # has submarine in the cell
+        if is_praive:
+            return 0
+        else:  # the competitor board - unchecked
             return '.'
-        elif cell_val == 1: # has submarine in the cell
-            if is_praive:
-                return 0
-            else:  # the competitor board - unchecked
-                return '.'
-        elif cell_val == 2: # miss hit
-            return '*'
-        elif cell_val == 3: # hits the sub
-            return '@'
-        elif cell_val == 4: # destroyed sub
-            return '#'
-        else:
-            print('not a legal number')
-            return 1
+    elif cell_val == 2:  # miss hit
+        return '*'
+    elif cell_val == 3:  # hits the sub
+        return '@'
+    elif cell_val == 4:  # destroyed sub
+        return '#'
+    else:
+        print('not a legal number')
+        return 1
+
+
+

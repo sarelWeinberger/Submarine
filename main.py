@@ -3,6 +3,7 @@ from competitorboard import CompetitorBoard
 from checkinput import check_input
 from server import Server
 from client import Clinent
+from myborad import MyBorad
 
 
 def run_server():
@@ -13,7 +14,8 @@ def run_client():
 
 if __name__ == '__main__':
     # stage 10:
-    server_or_client = input(Bcolors.OKBLUE + 'do you paly as aserver [press "S"] or as a client [press "C"]?' +  Bcolors.ENDC)
+
+    server_or_client = input('do you play as a server [press "S"] or as a client [press "C"]?' )
     server_or_client = check_input(server_or_client, 'player')
 
     if server_or_client == 'S':
