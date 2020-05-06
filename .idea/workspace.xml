@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competitorboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exerciseboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myborad.py" beforeDir="false" afterPath="$PROJECT_DIR$/myborad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="regexexpeir" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="myborad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +121,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regexexpeir.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myborad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.myborad" />
+        <item itemvalue="Python.board (1)" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.board (1)" />
-        <item itemvalue="Python.regexexpeir" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +221,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.984@0.0.1280.984" timestamp="1586038012459" />
+    <state x="370" y="242" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588659366097">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="370" y="242" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.984@0.0.1280.984" timestamp="1588659366097" />
     <state x="419" y="408" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1585687635905">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -243,38 +249,38 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587066425044" />
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom" timestamp="1587267435659">
+    <state width="1259" height="234" key="GridCell.Tab.0.bottom" timestamp="1588670800395">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587267435659" />
-    <state width="1259" height="224" key="GridCell.Tab.0.center" timestamp="1587267435659">
+    <state width="1259" height="234" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1588670800395" />
+    <state width="1259" height="234" key="GridCell.Tab.0.center" timestamp="1588670800394">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1587267435659" />
-    <state width="1259" height="224" key="GridCell.Tab.0.left" timestamp="1587267435659">
+    <state width="1259" height="234" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1588670800394" />
+    <state width="1259" height="234" key="GridCell.Tab.0.left" timestamp="1588670800394">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1587267435659" />
-    <state width="1259" height="224" key="GridCell.Tab.0.right" timestamp="1587267435659">
+    <state width="1259" height="234" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1588670800394" />
+    <state width="1259" height="234" key="GridCell.Tab.0.right" timestamp="1588670800394">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1587267435659" />
-    <state width="1259" height="468" key="GridCell.Tab.1.bottom" timestamp="1587266606386">
+    <state width="1259" height="234" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1588670800394" />
+    <state width="1259" height="219" key="GridCell.Tab.1.bottom" timestamp="1587409241691">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="468" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587266606386" />
-    <state width="1259" height="468" key="GridCell.Tab.1.center" timestamp="1587266606386">
+    <state width="1259" height="219" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1587409241691" />
+    <state width="1259" height="219" key="GridCell.Tab.1.center" timestamp="1587409241691">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="468" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1587266606386" />
-    <state width="1259" height="468" key="GridCell.Tab.1.left" timestamp="1587266606386">
+    <state width="1259" height="219" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1587409241691" />
+    <state width="1259" height="219" key="GridCell.Tab.1.left" timestamp="1587409241691">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="468" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1587266606386" />
-    <state width="1259" height="468" key="GridCell.Tab.1.right" timestamp="1587266606386">
+    <state width="1259" height="219" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1587409241691" />
+    <state width="1259" height="219" key="GridCell.Tab.1.right" timestamp="1587409241691">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="468" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1587266606386" />
+    <state width="1259" height="219" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1587409241691" />
     <state x="633" y="242" key="RollbackChangesDialog" timestamp="1586772557729">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -291,16 +297,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/competitorboard.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/client.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/server.py</url>
           <line>92</line>

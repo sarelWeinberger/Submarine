@@ -6,30 +6,25 @@ from bcolors import Bcolors
 class Board:
     ROW_SIZE = 10
     COLUMN_SIZE = 10
-    board_cells = np.zeros((ROW_SIZE + 1, COLUMN_SIZE + 1), dtype=int)
 
-    board_grafic_cells = []
+    def __init__(self):
+        self.board_cells = np.zeros((self.ROW_SIZE + 1, self.COLUMN_SIZE + 1), dtype=int)
+        self.board_grafic_cells = []
 
-    # for i in range(11):
-    #         board_grafic_cells.append([0]*11)  --> rewrite in list comprehension:
+        self.board_grafic_cells = [[0] * (10 + 1) for i in range(self.COLUMN_SIZE + 1)]
+        for i in range(self.ROW_SIZE + 1):
+            self.board_cells[i, 0] = i
+            self.board_cells[0, i] = i
+            self.board_grafic_cells[0][i] = i
+            self.board_grafic_cells[i][0] = i
+        for i in self.board_grafic_cells:
+            print(i)
 
-    board_grafic_cells = [[0] * (10 + 1) for i in range(COLUMN_SIZE + 1)]
-
-    for i in range(ROW_SIZE + 1):
-        board_cells[i, 0] = i
-        board_cells[0, i] = i
-        board_grafic_cells[0][i] = i
-        board_grafic_cells[i][0] = i
-
-    for i in board_grafic_cells:
-        print(i)
-
-    @classmethod
-    def checking_before_filling(cls, submarine_name):
+    def checking_before_filling(self, submarine_name):
         if submarine_name.submarine_orientation == 'H':
             # checking
             for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):
-                filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(cls.board_cells,
+                filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(self.board_cells,
                                                                                                      submarine_name.submarine_row_start,
                                                                                                      i)
                 if not filling_successful:
@@ -38,7 +33,7 @@ class Board:
         if submarine_name.submarine_orientation == 'V':
             # checking
             for i in range(submarine_name.submarine_row_start, submarine_name.submarine_row_end):
-                filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(cls.board_cells, i,
+                filling_successful = Board.checking_cells_occupied_or_adjacent_to_existing_submarine(self.board_cells, i,
                                                                                                      submarine_name.submarine_column_start
                                                                                                      )
                 if not filling_successful:
@@ -46,12 +41,11 @@ class Board:
 
         return True
 
-    @classmethod
-    def add_the_submarine_to_board(cls, submarine_name):
+    def add_the_submarine_to_board(self, submarine_name):
         cell_pos_in_sub = 0
         if submarine_name.submarine_orientation == 'H':
             for j,i in enumerate(range(submarine_name.submarine_column_start, submarine_name.submarine_column_end)):
-                cls.board_cells[submarine_name.submarine_row_start, i] = 1
+                self.board_cells[submarine_name.submarine_row_start, i] = 1
                 submarine_name.cells_list[j].x = submarine_name.submarine_row_start
                 submarine_name.cells_list[j].y = i
 
@@ -64,7 +58,7 @@ class Board:
 
         if submarine_name.submarine_orientation == 'V':
             for j,i in enumerate(range(submarine_name.submarine_row_start, submarine_name.submarine_row_end)):
-                cls.board_cells[i, submarine_name.submarine_column_start] = 1
+                self.board_cells[i, submarine_name.submarine_column_start] = 1
                 submarine_name.cells_list[j].x = i
                 submarine_name.cells_list[j].y = submarine_name.submarine_column_start
 
@@ -75,7 +69,7 @@ class Board:
                 submarine_name.cells_list[cell_pos_in_sub].get_and_return_sub_pos(i, submarine_name.submarine_column_start)
                 cell_pos_in_sub += 1
 
-    @staticmethod
+    @staticmethod # now that we use the cell as instance of board we can change it to obj.method
     def checking_cells_occupied_or_adjacent_to_existing_submarine(cells, row_x, row_y):
         # occupied_checking
         filling_successful = None
@@ -111,7 +105,7 @@ class Board:
                 # TODO: ADDING INDEX FOR THE GRAPIC EXHIBITION OF ROWS AND COLUMNS
                 cell_val = Board.board_cells[i+1, j+1]
                 grapic_cell = transform_cell_value_to_graphic_char(Board.board_cells[i+1, j+1], is_praive)
-                Board.board_grafic_cells[i+1][j+1] = grapic_cell
+                self.board_grafic_cells[i+1][j+1] = grapic_cell
         print('from board_grafic_cells method ')
         # for i in  Board.board_grafic_cells:
         #     print(i)

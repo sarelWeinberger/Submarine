@@ -10,12 +10,14 @@ class MyBorad(Board):
     basic_check = False
 
     def __init__(self, player_definition):
+        super().__init__()
         self.cell_list = []
         self.all_subs_dead = False
         self.submarine_list = []
 
         self.player_definition = player_definition # define if the player is a client or a server
         # TODO: add some condition - when we want the user to fill the board!!!
+        #print(help(MyBorad))
         self.GetSubsFromPlayer()
         print("my cells full:  '\n' {} ".format(self.board_cells))
 
@@ -30,18 +32,17 @@ class MyBorad(Board):
             num_of_submarines_of_that_size = ((biggest_submarine - i) + 1)
             for j in range(num_of_submarines_of_that_size):
                 submarine_name = 'submarine_of_size_{}_number_{}'.format(i,j+1)
-                print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name, '\n', '\n',
-                                                                                    self.board_cells))
+                print("fill {} length , current board: {}, rows \ columns {} {}".format(submarine_name, '\n', '\n',self.board_cells))
                 submarine_name = Submarine(i, submarine_name)
                 filling_ok = None
                 while not filling_ok:
                     submarine_name.fill_submarine_position()
-                    filling_ok = MyBorad.checking_before_filling(submarine_name)
+                    filling_ok = self.checking_before_filling(submarine_name)
 
                 if filling_ok:
                     submarine_name.define_cells()
                     self.submarine_list.append(submarine_name)
-                    MyBorad.add_the_submarine_to_board(submarine_name)
+                    self.add_the_submarine_to_board(submarine_name)
         print("filing complete successfully ")
 
     def hits(self, pos_x_hit, pos_y_hit):
@@ -62,7 +63,7 @@ class MyBorad(Board):
 
             # connect to the sub-object and see if see destroyed
             self.board_cells[pos_x_hit, pos_y_hit] = 3
-            return 'you hit succeed'
+            return 'your hit succeed'
         if self.board_grafic_cells == 2:
             return ('you already miss this point')
 
