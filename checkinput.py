@@ -37,8 +37,6 @@ def check_input(user_input, input_check_type, basic_match=True, Board=None, Subm
                 if input_check_type == 'number':
                     print(Bcolors.FAIL + 'input is not a number try new input' + Bcolors.ENDC)
                     user_input = input(' try new int - input')
-
-        # TODO: re.compile...
         else:
             pattern = re.compile(r'proportional.to.(the.)?board', re.IGNORECASE)
             match = pattern.search(input_check_type)
@@ -51,7 +49,6 @@ def check_input(user_input, input_check_type, basic_match=True, Board=None, Subm
                     valid_input = False
                     user_input = input(Bcolors.FAIL + "not valid size, choose size between 2 to 5")
                 # TODO: create equation for any size of board
-
             else:
                 pattern = re.compile(r'define.in.(the.)?board', re.IGNORECASE)
                 match = pattern.search(input_check_type)

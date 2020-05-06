@@ -1,8 +1,6 @@
 from checkinput import check_input
 from server import Server
 from client import Clinent
-from myborad import MyBorad
-
 
 def run_server():
     player1 = Server()

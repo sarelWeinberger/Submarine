@@ -1,7 +1,7 @@
 import socket
 import pickle
 from server import Server
-from myborad import MyBorad
+from board import Board
 
 PORT_NUM = 5050
 FORMAT = 'utf-8'

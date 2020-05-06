@@ -1,5 +1,5 @@
 from bcolors import Bcolors
-from board import Board
+#from board import Board
 import numpy as np
 from checkinput import check_input
 from coordinate import get_coordinate

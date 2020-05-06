@@ -1,40 +1,29 @@
 import socket
-from myborad import MyBorad
 import pickle
-from bcolors import Bcolors
-
+from board import Board
 FORMAT = 'utf-8'
 PORT_NUM = 5050
+
 class Server:
     def __init__(self):
         # 1. creating socket obj and define it's protocol:
         my_socket = socket.socket(socket.AF_INET,  # ipv4
                                   socket.SOCK_STREAM)  # tcp
 
-        #my_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
         # 2. get specific ip and port for the socket
         my_socket.bind(
             (socket.gethostname(), PORT_NUM))  # gethostname -> ip from this program ,  port_num -> port number
 
-        # 3. start listening with a que length:
+        # 3. start listening with a QUEUE length:
         my_socket.listen(10)
 
         # init server board:
-        server_bord = MyBorad('S')
+        server_bord = Board('S')
         self.dead = False
-        first_itatation = True
 
-        # grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
-        # for i in grafic_board:
-        #     print(f'{i}')
         while True:
             client_socket, address = my_socket.accept()
             print(f'connection from socket {address} ,ipv4, succeed')
-
-            # if first_itatation:
-            #     client_socket.send(bytes("welcome to the server player!", "utf-8"))
-            #first_itatation = False
 
             connection = True
             while connection:
@@ -50,8 +39,6 @@ class Server:
                     client_socket.send(grafic_to_send)# --> THE PRIVET VERSION
                 except:
                     print('seding grafig board problem')
-                    #connection = False;
-                    #client_socket.close()
 
                 # 2. asking for hitting gassing
                 msg_pos_x = pickle.dumps('DEFINE X POS FOR HIT')
