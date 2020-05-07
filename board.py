@@ -45,27 +45,27 @@ class Board:
                     self.add_the_submarine_to_board(current_submarine)
         print("filing complete successfully ")
 
-    def checking_subs_occupird_or_adjacent_before_filling(self, submarine_name):
-        if submarine_name.submarine_orientation == 'H':
+    def checking_subs_occupird_or_adjacent_before_filling(self, current_submarine):
+        if current_submarine.submarine_orientation == 'H':
             # checking
-            for i in range(submarine_name.submarine_column_start, submarine_name.submarine_column_end):
+            for i in range(current_submarine.submarine_column_start, current_submarine.submarine_column_end):
                 not_occupied_position = self.checking_cells_occupie_by_existing_submarine(self.board_cells,
-                                                                                          submarine_name.submarine_row_start,
+                                                                                          current_submarine.submarine_row_start,
                                                                                           i)
                 not_adjacent_position = self.checking_cells_adjacent_to_existing_submarine(self.board_cells,
-                                                                                           submarine_name.submarine_row_start,
+                                                                                           current_submarine.submarine_row_start,
                                                                                            i)
                 if (not not_occupied_position) or (not not_adjacent_position):
                     return False
 
-        if submarine_name.submarine_orientation == 'V':
+        if current_submarine.submarine_orientation == 'V':
             # checking
-            for i in range(submarine_name.submarine_row_start, submarine_name.submarine_row_end):
+            for i in range(current_submarine.submarine_row_start, current_submarine.submarine_row_end):
                 not_occupied_position = self.checking_cells_occupie_by_existing_submarine(self.board_cells, i,
-                                                                                          submarine_name.submarine_column_start)
+                                                                                          current_submarine.submarine_column_start)
 
                 not_adjacent_position = self.checking_cells_adjacent_to_existing_submarine(self.board_cells, i,
-                                                                                           submarine_name.submarine_column_start)
+                                                                                           current_submarine.submarine_column_start)
                 if (not not_occupied_position) or (not not_adjacent_position):
                     return False
         return True
