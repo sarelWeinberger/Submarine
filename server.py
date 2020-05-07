@@ -3,6 +3,7 @@ import pickle
 from board import Board
 FORMAT = 'utf-8'
 PORT_NUM = 5050
+import board
 
 class Server:
     def __init__(self):
@@ -19,7 +20,10 @@ class Server:
 
         # init server board:
         server_bord = Board('S')
+        server_bord.GetSubsFromPlayer()
         self.dead = False
+        my_grafic_board = server_bord.transform_all_cell_value_to_graphic_char(True)
+        board.show_board(my_grafic_board)
 
         while True:
             client_socket, address = my_socket.accept()
@@ -27,14 +31,12 @@ class Server:
 
             connection = True
             while connection:
-                # 1. sending the board condition
-                my_grafic_board = server_bord.transform_all_cell_value_to_graphic_char(True)
-                for i in my_grafic_board:
-                    print(f'{i}')
+
 
                 other_grafic_board = server_bord.transform_all_cell_value_to_graphic_char(False)
                 grafic_to_send = pickle.dumps(other_grafic_board)
 
+                # 1. sending the board condition
                 try:
                     client_socket.send(grafic_to_send)# --> THE PRIVET VERSION
                 except:
