@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65ffb359-586b-453c-b5bd-bc170876fac9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBord.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +17,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f727d973e06fefc890c9d609af897af971b79748" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZlfHEtKLo9ws7ft71DEalUtSCR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,11 +36,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="bord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="board (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,7 +53,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bord.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/board.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +62,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="competitorBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +74,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\competitorBord.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="coordinate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/coordinate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myBord (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="myborad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,28 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myBord.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="myBord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="main.py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\User\Documents\Python Scripts\Submarines\myBord.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myborad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.bord (1)" />
-        <item itemvalue="Python.myBord (1)" />
-        <item itemvalue="Python.myBord" />
-        <item itemvalue="Python.competitorBord" />
+        <item itemvalue="Python.board (1)" />
+        <item itemvalue="Python.coordinate" />
+        <item itemvalue="Python.myborad" />
+        <item itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +167,13 @@
       <option name="presentableId" value="Default" />
       <updated>1585418511403</updated>
     </task>
+    <task id="LOCAL‎00001" summary="to stage 11, need some corrections">
+      <created>1587029016563</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1587029016563</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -172,15 +186,40 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="to stage 11, need some corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="to stage 11, need some corrections" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="232" y="153" key="#Inspections" timestamp="1585606190605">
+    <state x="232" y="153" key="#Inspections" timestamp="1585779407832">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585606190605" />
-    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585425629945">
+    <state x="232" y="153" key="#Inspections/0.0.1280.984@0.0.1280.984" timestamp="1585779407832" />
+    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586249470350">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1585425629945" />
+    <state x="94" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1586249470350" />
+    <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586038012459">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="104" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.984@0.0.1280.984" timestamp="1586038012459" />
+    <state x="370" y="242" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588659366097">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="370" y="242" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.984@0.0.1280.984" timestamp="1588659366097" />
     <state x="419" y="408" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1585687635905">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -193,50 +232,58 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="395" y="201" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1585696217786" />
-    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog" timestamp="1585696810283">
+    <state x="306" y="90" key="CommitChangelistDialog2" timestamp="1587029015560">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog/0.0.1280.984@0.0.1280.984" timestamp="1585696810283" />
-    <state x="420" y="250" key="FileChooserDialogImpl" timestamp="1585425759210">
+    <state x="306" y="90" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1587029015560" />
+    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog" timestamp="1586035144896">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1585425759210" />
-    <state width="1259" height="26" key="GridCell.Tab.0.bottom" timestamp="1585702297804">
+    <state x="92" y="92" width="1096" height="800" maximized="true" key="DiffContextDialog/0.0.1280.984@0.0.1280.984" timestamp="1586035144896" />
+    <state x="420" y="250" key="FileChooserDialogImpl" timestamp="1587066425044">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585702297804" />
-    <state width="1259" height="26" key="GridCell.Tab.0.center" timestamp="1585702297803">
+    <state x="420" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587066425044" />
+    <state width="1259" height="558" key="GridCell.Tab.0.bottom" timestamp="1588855929827">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1585702297803" />
-    <state width="1259" height="26" key="GridCell.Tab.0.left" timestamp="1585702297803">
+    <state width="1259" height="558" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1588855929827" />
+    <state width="1259" height="558" key="GridCell.Tab.0.center" timestamp="1588855929827">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1585702297803" />
-    <state width="1259" height="26" key="GridCell.Tab.0.right" timestamp="1585702297804">
+    <state width="1259" height="558" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1588855929827" />
+    <state width="1259" height="558" key="GridCell.Tab.0.left" timestamp="1588855929827">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1259" height="26" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1585702297804" />
-    <state width="629" height="393" key="GridCell.Tab.1.bottom" timestamp="1585700549815">
+    <state width="1259" height="558" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1588855929827" />
+    <state width="1259" height="558" key="GridCell.Tab.0.right" timestamp="1588855929827">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.center" timestamp="1585700549815">
+    <state width="1259" height="558" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1588855929827" />
+    <state width="1259" height="460" key="GridCell.Tab.1.bottom" timestamp="1588849519201">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.left" timestamp="1585700549815">
+    <state width="1259" height="460" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1588849519201" />
+    <state width="1259" height="460" key="GridCell.Tab.1.center" timestamp="1588849519201">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state width="629" height="393" key="GridCell.Tab.1.right" timestamp="1585700549815">
+    <state width="1259" height="460" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1588849519201" />
+    <state width="1259" height="460" key="GridCell.Tab.1.left" timestamp="1588849519201">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="629" height="393" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1585700549815" />
-    <state x="143" y="137" key="SettingsEditor" timestamp="1585425620878">
+    <state width="1259" height="460" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1588849519201" />
+    <state width="1259" height="460" key="GridCell.Tab.1.right" timestamp="1588849519201">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="143" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1585425620878" />
+    <state width="1259" height="460" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1588849519201" />
+    <state x="633" y="242" key="RollbackChangesDialog" timestamp="1586772557729">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="633" y="242" key="RollbackChangesDialog/0.0.1280.984@0.0.1280.984" timestamp="1586772557729" />
+    <state x="143" y="137" key="SettingsEditor" timestamp="1588841414165">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="143" y="137" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1588841414165" />
     <state x="381" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1585454414193">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -246,24 +293,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>137</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/server.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myBord.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bord.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/board.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
